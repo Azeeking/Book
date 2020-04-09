@@ -1,0 +1,23 @@
+<div class="container" fxLayout="column" fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+      <h3>Top</h3>
+      <button class="Post" (click)="goHome()">POST</button>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <mat-grid-list cols="3" rowHeight="200px">
+      <mat-grid-tile *ngFor="let book of books" (click)='OnSelect(book)'>
+        <h1 matLine>{{ book.title }}</h1>
+        <mat-grid-tile-footer>
+          <p matLine>{{ book.author }}</p>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  
+
+</div>

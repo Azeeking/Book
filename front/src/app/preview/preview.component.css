@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.details {
+  height: 200px;
+}
+
+.Post{
+  margin-left: 1320px;
+}
